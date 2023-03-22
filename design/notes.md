@@ -1,10 +1,20 @@
-# Considerations / Requirements
+# Spec Checklist
+
+[] GameSession
+  [] #start
+    [] prompt/initialize human player (name)
+    [] prompt/initialize AI players (how many)
+    [] start the first round
+
+# Design Notes
+
+## Considerations / Requirements
 
 - Will it be necessary to store data between program invocations? Probably not.
 - How many human players will there be? Probably just one for now.
 - AI Players???
 
-# Starting a new session / invoking the main program
+## Starting a new session / invoking the main program
 
 When the user invokes the program, a new GameSession instance should be created.
 This encapsulates everything that happens from program invocation to program
