@@ -14,7 +14,7 @@ class GameSession
   def start
     init_human_player
     init_ai_players
-    round_loop
+    start_round
   end
 
   def prompt_human_player_name
@@ -46,7 +46,7 @@ class GameSession
     num_ai_players = $stdin.gets.to_i
   end
 
-  def round_loop
+  def start_round
     round = Round.new(self)
     @rounds << round
     round.start
