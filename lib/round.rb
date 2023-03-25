@@ -3,5 +3,9 @@ class Round
   end
 
   def start
+    deal_cards
+  end
+
+  def deal_cards
   end
 end
