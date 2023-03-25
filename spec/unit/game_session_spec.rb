@@ -139,10 +139,5 @@ RSpec.describe GameSession do
       expect(round).to receive(:start)
       subject.start_round
     end
-
-    context 'when prompting user for another round' do
-      it 'starts another round if user says yes'
-      it 'quits if user says no'
-    end
   end
 end
