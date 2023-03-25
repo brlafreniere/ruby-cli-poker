@@ -17,5 +17,12 @@ RSpec.describe Player do
     it 'accepts a valid string' do
       expect { Player.new(exactly_fifty_chars) }.to_not raise_error
     end
+
+    context 'after initializing a player' do
+      let(:player) { Player.new("Blaine") }
+      it 'has starting chips' do
+        expect(player.chips).to eq(Player::STARTING_CHIP_AMOUNT)
+      end
+    end
   end
 end
